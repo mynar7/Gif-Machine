@@ -49,7 +49,7 @@ function buildQuery(searchTerm, type) {
     let offset = '&offset=' + Math.floor(Math.random() * 100);
     //in case I want to change my query to a random instead of search later
     if(type === "search"){
-        return 'http://api.giphy.com/v1/gifs/search?q=' + searchTerm + apiKey + limit + offset + rating;
+        return 'https://api.giphy.com/v1/gifs/search?q=' + searchTerm + apiKey + limit + offset + rating;
     }
 }
 
