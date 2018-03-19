@@ -32,7 +32,7 @@ function drawBtns() {
     }
 }
 //delete last button
-$('#delete').on("click", function(){
+$('#delete').on("click", function(event){
     event.preventDefault();
     topicArr.pop();
     drawBtns();
@@ -96,7 +96,7 @@ function makeGifs(queryURL) {
 } //end makeGifs fx
 
 //add button to clear gifs
-$("#clear").on("click", function(){
+$("#clear").on("click", function(event){
     event.preventDefault();
     $('#results').empty();
 });
