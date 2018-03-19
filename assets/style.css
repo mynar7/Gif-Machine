@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+.btns {
+    margin: 20px auto;
+}
+.gifBox {
+    float: left;
+    margin: 0 10px;
+}
+
+button {
+    padding: 8px;
+    min-width: 100px;
+    background-color: rgb(45, 143, 189);
+    color: rgb(220, 221, 220);
+    font-family: inherit;
+    font-weight: bolder;
+}
+.results {
+    clear:both;
+    max-width: 1000px;
+}
+#query {
+    height: 28px;
+}
+form {
+    float: right;
+}
