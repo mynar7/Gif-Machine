@@ -8,7 +8,22 @@ body {
 }
 .gifBox {
     float: left;
-    margin: 0 10px;
+    margin: 5px;
+    max-width: 200px;
+    min-width: 200px;
+    min-height: 275px;
+    padding: 0 10px;
+    background-color: #ccccda;
+    border: 5px #6f6f6f solid;
+}
+.gifBox>img {
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.gifBox>p:nth-child(1) {
+    border-bottom: 2px #9e9696 solid;
 }
 
 button {
