@@ -86,10 +86,12 @@ function makeGifs(queryURL) {
                 let div = $('<div>');
                 div.css("width", response.data[i].images.fixed_height.width);
                 div.addClass("gifBox");
+                //handle no title
                 let title = response.data[i].title;
                 if(title === "") {
                     title = "<span style='color:red'>No Title Available</span>";
                 }
+                //handle no rating
                 let rating = response.data[i].rating.toUpperCase()
                 if(rating === "") {
                     rating = "<span style='color:red'>Unrated</span>";

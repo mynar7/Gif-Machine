@@ -4,8 +4,7 @@ body {
 }
 
 .content {
-    max-width: 90%;
-    margin: auto;
+    margin-left: 5%;
 }
 header {
     background-color: rgb(43, 110, 161);
