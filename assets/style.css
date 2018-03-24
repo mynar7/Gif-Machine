@@ -1,10 +1,40 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1200px;
+}
+
+.content {
+    max-width: 1400px;
     margin: auto;
 }
+header {
+    background-color: rgb(0, 162, 255);
+    width: 100%;
+    display: inline-block;
+    min-height: 100px;
+}
 .btns {
-    margin: 20px auto;
+    float: left;
+    margin: 0 0 0 5%;
+    padding: 20px 0;
+    text-align: center;
+    /* background-color: red; */
+    max-width: 60%;
+}
+.btns>button {
+    float: left;
+    display: block;
+}
+#query {
+    height: 28px;
+}
+form {
+    float: right;
+    min-width: 300px;
+    /* position: relative;
+    top: 0;
+    right: 0; */
+    margin-top: 10px;
+    margin-right: 8%;
 }
 .gifBox {
     box-sizing: border-box;
@@ -12,7 +42,7 @@ body {
     margin: 2px;
     max-width: 310px;
     min-width: 320px;
-    min-height: 275px;
+    min-height: 325px;
     padding: 0 5px;
     background-color: #ccccda;
     border: 5px #6f6f6f solid;
@@ -23,8 +53,13 @@ body {
     margin: auto;
 }
 
-.gifBox>p:nth-child(1) {
+.gifBox>p:nth-child(2) {
     border-bottom: 2px #9e9696 solid;
+    margin-bottom: 5px;
+}
+
+.gifBox>p {
+    padding: 5px 0;
 }
 
 button {
@@ -37,11 +72,22 @@ button {
 }
 .results {
     clear:both;
-    max-width: 1000px;
+    /* max-width: 1000px; */
 }
-#query {
-    height: 28px;
+@media screen and (max-width: 1200px) {
+    form {
+        margin-right: 0;
+    }
 }
-form {
-    float: right;
+@media screen and (max-width: 1000px) {
+    header {
+        display: grid;
+    }
+    .btns {
+        min-width: 100%;
+    }
+
+    form {
+        margin: auto;
+    }
 }

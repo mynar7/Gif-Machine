@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giphy Gif maker</title>
+    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <div class="btns" id="btns"></div>
-    
-    <form>
-        Make a Gif Button:<br>
-        <input type="text" name="query" id="query"/>
-        <button id="add">Add</button><br>
-        <button id="clear">Clear Gifs</button>
-        <button id="delete">Delete</button>
-    </form>
+    <header>
 
-    <div class="results" id="results"></div>
+        <div class="btns" id="btns"></div>
+        <form>
+            Make a Gif Button:<br>
+            <input type="text" name="query" id="query"/>
+            <button id="add">Add</button><br>
+            <button id="clear">Clear Gifs</button>
+            <button id="delete">Delete</button>
+        </form>
+    </header>
+    <div class="content">
+        <div class="results" id="results"></div>
+    </div><!-- end content -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
 </body>

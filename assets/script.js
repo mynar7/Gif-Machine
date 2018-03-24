@@ -86,7 +86,16 @@ function makeGifs(queryURL) {
                 let div = $('<div>');
                 div.css("width", response.data[i].images.fixed_height.width);
                 div.addClass("gifBox");
-                div.html("<p>Rating: " + response.data[i].rating + "</p>").append(img);
+                let title = response.data[i].title;
+                if(title === "") {
+                    title = "<span style='color:red'>No Title Available</span>";
+                }
+                let rating = response.data[i].rating.toUpperCase()
+                if(rating === "") {
+                    rating = "<span style='color:red'>Unrated</span>";
+                }
+
+                div.html("<p>Title: " + title + "</p><p>Rating: " + rating + "</p>").append(img);
                 div.prependTo('#results');
                 
             }//end for
